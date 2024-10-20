@@ -1,0 +1,118 @@
+@import url(
+'https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.logo {
+    color: #836334;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2c1b00;
+}
+
+i {
+    transition: transform 0.5s ease;
+}
+
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #836334;
+    font-weight: bold;
+}
+
+.home,
+.menu,
+.contactus,
+.about-us {
+    padding: 1rem 0;
+}
+
+.navbar-links,
+.navbar-search {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu,
+.contactus {
+    position: relative;
+}
+
+.menu:hover .html-chevron
+ {
+    transform: rotate(-180deg);
+}
+
+.menu-sub-menu
+ {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 3.45rem;
+    left: -5%;
+    background-color: hsl(36, 56%, 14%);
+    width: 110%;
+}
+
+.menu-sub-menu li{
+    padding: 0.75rem;
+}
+
+.menu:hover .menu-sub-menu {
+    display: flex;
+}
+
+.menu-sub-menu:hover .menu-sub-menu {
+    display: flex;
+}
+
+
+.menu-sub-menu li:nth-child(3):hover{
+    display: flex;
+}
+
+.menu-sub-menu:hover i {
+    transform: rotate(-90deg);
+}
+.design{
+    margin: auto 80px;
+background-color: hsl(36, 56%, 14%);
+padding-left: 50px;
+padding-right: 50px;
+}
+.images{
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 150px;
+    display: inline-block;
+}
+.coffe1{
+  
+    text-align:justify;
+    background-color: white;
+}
+.damn {
+    height: 50px;
+    width: 50px;
+}

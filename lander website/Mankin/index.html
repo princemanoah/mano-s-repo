@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <title>SPORTS ACESSORIES</title>
+    <link rel="stylesheet" href="styless.css">
+    <script>
+        function orders(){
+            let val=prompt("To place the order enter your name ");
+            if(val){
+                alert("your order is placed");
+            }
+            else{
+                alert("please enter the name");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="head">
+        <nav class="nav">
+            <div class="logo">SPORTS ACESSORIES</div>
+            <ul class="navbar-links">
+                <li class="home"><a href="#">HOME</a></li>
+                <li class="menu">
+                    <a href="#" class="html-link">MENU
+                        <i class="fa-solid fa-chevron-down html-chevron"></i>
+                    </a>
+                    <ul class="menu-sub-menu">
+                        <li><a href="#">BADMINTON ACESSORIES</a></li>
+                        <li><a href="#">CRICKET ACESSORIES</a></li>
+                        <li><a href="#" class="html-js-link">BOXING ACESSORIES</a></li>
+                        <li><a href="#">FOOTBALL ACESSORIES</a></li>
+                    </ul>
+                </li>
+                <li class="contactus">
+                    <a href="#" class="js-link">CONTACT US</a>
+                </li>
+                <li class="about-us">
+                      <a href="#">ABOUT US</a>
+                  </li>
+            </ul>
+            <div class="navbar-search">
+                <a href="#"><input type="text" value="search" name="name" style="   background-color: #836334;">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                <a href="#">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                <a href="#">
+                      <i class="fa-solid fa-user"></i>
+                  </a>
+            </div>
+        </nav>
+    </header>
+    <main class="mainpg" style="background-image: url(coffee.jpg);">
+        <div class="design">
+            <div class="images">
+            <img src="bat1.jpg" alt="bat" class="damn">
+            <div class="coffe1" ><h3>bat         -$15<button onclick="orders()" >Add</button></h3></div></div>
+            <div class="images">
+            <img src="badminton.jpg" alt="racket" class="damn">
+            <div class="coffe1" ><h3>racket     -$30<button  onclick="orders()" >Add</button></h3></div>
+        </div>
+        <div class="images">
+            <img src="boxxing.jpg" alt="gloves" class="damn" >
+            <div class="coffe1" ><h3>boxing gloves    -$10<button  onclick="orders()" >Add</button></h3></div></div>
+            <div class="images">
+                <img src="kittbag.jpg" alt="bag" class="damn">
+                <div class="coffe1" ><h3>kit bag    -$15<button  onclick="orders()" >Add</button></h3></div></div>
+                <div class="images">
+                    <img src="shoes.jpg" alt="shoes" class="damn" >
+                    <div class="coffe1" ><h3>shoes   -$8<button  onclick="orders()" >Add</button></h3></div></div>
+                    <div class="images">
+                        <img src="football.jpg" alt="helmet"  class="damn">
+                        <div class="coffe1" ><h3>football    -$20<button  onclick="orders()" >Add</button></h3></div></div>
+    </div>
+    </main>
+    <footer>
+        <p >&copy;visit our website</p>
+    </footer>
+</body>
+
+</html>
